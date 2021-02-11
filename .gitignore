@@ -8,4 +8,4 @@ Thumb.db
 *.ai
 *.mp4
 *.zip
-*bundles
+bundles/
