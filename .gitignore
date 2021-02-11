@@ -1,5 +1,4 @@
 node_modules/
-bundles/
 .DS_Store
 Thumb.db
 .idea
@@ -7,6 +6,5 @@ Thumb.db
 *.log
 *.psd
 *.ai
-*.jpg
-*.svg
-*.png
+*.mp4
+*.zip
