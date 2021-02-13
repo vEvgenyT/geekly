@@ -6,6 +6,7 @@
 .title_bkg-img {
   background-image: url(../img/bkg@3.png);
 }
+
 .title_position {
   grid-template-areas: 'heading heading heading heading'
                         'img img img img'
@@ -43,7 +44,6 @@
     }
 }
 
-
 .title_size {
   width: 300px;
   margin: 0 auto;
@@ -79,11 +79,19 @@
 .title__heading {
   grid-area: heading;
 }
+
 .title__heading_style {
   color: var(--main);
 }
 
-
+.title__heading_position {
+  margin: 0;
+}
+@media only screen and (min-width: 768px) {
+  .title__heading_position {
+    align-self: center;
+  }
+}
 
 
 /*
@@ -94,10 +102,24 @@
 .title__img {
   grid-area: img;
 }
+
 .title__img_size {
   height: 330px;
   width: 285px;
 }
+@media only screen and (min-width: 960px) {
+  .title__img_size {
+    height: 518px;
+    width: 436px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .title__img_size {
+    height: 618px;
+    width: 536px;
+  }
+}
+
 .title__img_position {
   margin: 0;
 }
@@ -112,15 +134,20 @@
 .title__btn {
   grid-area: btn;
 }
+
 .title__btn_size {
   width: 300px;
   height: 55px;
 }
+
 .title__btn_style {
   background-color: var(--white);
   border: none;
 }
 
+.title__btn_position {
+  margin: 0 0 24px 0;
+}
 
 
 /*
@@ -131,12 +158,15 @@
 .title__tag {
   grid-area: tag;
 }
+
 .title__tag_style {
   color: var(--white);
   opacity: .5;
 }
 
-
+.title__tag_size {
+  align-self:end;
+}
 
 
 /*
@@ -147,12 +177,18 @@
 .title__paragraph {
   grid-area: paragraph;
 }
+
 .title__paragraph_style {
   color: var(--main);
 }
+
 .title__text_style {
   color: var(--white);
   opacity: .5
+}
+
+.title__text_position {
+  margin: 0;
 }
 
 
@@ -165,8 +201,29 @@
 .title__data {
   grid-area: data;
 }
+
 .title__data_style {
   color: var(--main);
   border: 1px solid var(--main);
   text-align: center;
+}
+
+.title__data_position {
+  margin: 25px 0;
+}
+@media only screen and (min-width: 768px) {
+  .title__data_position {
+    margin: 0;
+  }
+}
+
+.title__data_size {
+  height: 37px;
+  line-height: 37px;
+}
+@media only screen and (min-width: 768px) {
+  .title__data_size {
+    height: 66px;
+    line-height: 66px;
+  }
 }
