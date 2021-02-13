@@ -50,14 +50,16 @@ var path = {
           'src/css/**/font.css',
           'src/css/**/color.css',
           'src/css/**/style.css',
+          'src/css/**/header.css',
+          'src/css/**/footer.css',
         ],
         indexCss: [
-          'src/**/index/**/header/**/*.css',
-          'src/**/index/**/footer/**/*.css',
+          'src/**/block/**/*.css',
         ],
         indexHtml: [
           'src/**/head.html',
           'src/**/header.html',
+          'src/**/section-title.html',
           'src/**/footer.html',
         ],
         js: [

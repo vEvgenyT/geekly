@@ -3,3 +3,7 @@
   --black: #171716;
   --white: #FFFFFF;
 }
+
+.html_bkg-color {
+  background-color: var(--black);
+}

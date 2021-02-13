@@ -1,0 +1,172 @@
+/*
+**********************************************************
+*** =============== >>> - SECTION - <<< ============== ***
+**********************************************************
+*/
+.title_bkg-img {
+  background-image: url(../img/bkg@3.png);
+}
+.title_position {
+  grid-template-areas: 'heading heading heading heading'
+                        'img img img img'
+                        'btn btn btn btn'
+                        'tag . . .'
+                        'paragraph paragraph paragraph paragraph'
+                        'data data data data';
+}
+@media only screen and (min-width: 480px) {
+  .title_position {
+    grid-template-areas: '. heading heading heading heading .'
+                        '.img img img img .'
+                        '. btn btn btn btn .'
+                        'tag . . . . .'
+                        'paragraph paragraph paragraph paragraph . .'
+                        'data data data data . .';
+    }
+}
+@media only screen and (min-width: 640px) {
+  .title_position {
+    grid-template-areas: 'heading heading heading heading img img img img'
+                        'tag . . . img img img img'
+                        'paragraph paragraph paragraph paragraph img img img img'
+                        'btn btn btn btn img img img img'
+                        'data data data data data data data data';
+    }
+}
+@media only screen and (min-width: 960px) {
+  .title_position {
+    grid-template-areas: 'heading heading heading heading heading heading img img img img img img'
+                        'tag . . . . . img img img img img img'
+                        'paragraph paragraph paragraph paragraph . . img img img img img img'
+                        'btn btn btn btn . . img img img img img img'
+                        'data data data data data data data data data data data data';
+    }
+}
+
+
+.title_size {
+  width: 300px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 480px) {
+  .title_size {
+    width: 460px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .title_size {
+    width: 620px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .title_size {
+    width: 920px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .title_size {
+    width: 1200px;
+  }
+}
+
+
+
+/*
+**********************************************************
+*** =============== >>> - HEADING - <<< ============== ***
+**********************************************************
+*/
+.title__heading {
+  grid-area: heading;
+}
+.title__heading_style {
+  color: var(--main);
+}
+
+
+
+
+/*
+**********************************************************
+*** ================ >>> - IMAGE - <<< =============== ***
+**********************************************************
+*/
+.title__img {
+  grid-area: img;
+}
+.title__img_size {
+  height: 330px;
+  width: 285px;
+}
+.title__img_position {
+  margin: 0;
+}
+
+
+
+/*
+**********************************************************
+*** ================ >>> - BUTTON - <<< ============== ***
+**********************************************************
+*/
+.title__btn {
+  grid-area: btn;
+}
+.title__btn_size {
+  width: 300px;
+  height: 55px;
+}
+.title__btn_style {
+  background-color: var(--white);
+  border: none;
+}
+
+
+
+/*
+**********************************************************
+*** ================= >>> - TAG - <<< ================ ***
+**********************************************************
+*/
+.title__tag {
+  grid-area: tag;
+}
+.title__tag_style {
+  color: var(--white);
+  opacity: .5;
+}
+
+
+
+
+/*
+**********************************************************
+*** ============== >>> - PARAGRAPH - <<< ============= ***
+**********************************************************
+*/
+.title__paragraph {
+  grid-area: paragraph;
+}
+.title__paragraph_style {
+  color: var(--main);
+}
+.title__text_style {
+  color: var(--white);
+  opacity: .5
+}
+
+
+
+/*
+**********************************************************
+*** ================= >>> - DATA - <<< =============== ***
+**********************************************************
+*/
+.title__data {
+  grid-area: data;
+}
+.title__data_style {
+  color: var(--main);
+  border: 1px solid var(--main);
+  text-align: center;
+}
