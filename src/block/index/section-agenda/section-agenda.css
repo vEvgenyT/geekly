@@ -1,0 +1,87 @@
+/*
+**********************************************************
+*** =============== >>> - SECTION - <<< ============== ***
+**********************************************************
+*/
+.agenda_position {
+  grid-template-areas: 'heading heading heading heading'
+                        'subtitle subtitle subtitle subtitle'
+                        'paragraph paragraph paragraph paragraph';
+                        /*'select select select select';*/
+}
+
+
+
+
+
+.agenda_size {
+  width: 300px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 480px) {
+  .agenda_size {
+    width: 460px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .agenda_size {
+    width: 620px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .agenda_size {
+    width: 920px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .agenda_size {
+    width: 1200px;
+  }
+}
+
+
+
+
+
+/*
+**********************************************************
+*** =============== >>> - HEADING - <<< ============== ***
+**********************************************************
+*/
+.agenda__heading {
+  grid-area: heading;
+}
+
+.agenda__heading_style {
+  color: var(--main);
+  text-align: center;
+}
+
+
+/*
+**********************************************************
+*** ============== >>> - SUBTITLE - <<< ============== ***
+**********************************************************
+*/
+.agenda__subtitle {
+  grid-area: subtitle;
+}
+
+.agenda__subtitle_style {
+  color: var(--white);
+  text-align: center;
+}
+
+/*
+**********************************************************
+*** ============== >>> - PARAGRAPH - <<< ============= ***
+**********************************************************
+*/
+.agenda__paragraph {
+  grid-area: paragraph;
+}
+
+.agenda__paragraph_style {
+  color: var(--white);
+  text-align: center;
+}

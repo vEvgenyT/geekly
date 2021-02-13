@@ -54,12 +54,18 @@ var path = {
           'src/css/**/footer.css',
         ],
         indexCss: [
-          'src/**/block/**/*.css',
+          'src/**/block/**/section-title/**/*.css',
+          'src/**/block/**/section-agenda/**/*.css',
+          'src/**/block/**/section-career/**/*.css',
+          'src/**/block/**/section-pro/**/*.css',
         ],
         indexHtml: [
           'src/**/head.html',
           'src/**/header.html',
-          'src/**/section-title.html',
+          // 'src/**/section-title.html',
+          'src/**/section-agenda.html',
+          // 'src/**/section-career.html',
+          // 'src/**/section-pro.html',
           'src/**/footer.html',
         ],
         js: [

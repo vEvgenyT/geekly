@@ -41,6 +41,7 @@
   font-style: normal;
   font-weight: 900;
   font-size: 60px;
+  text-transform: uppercase;
 }
 @media only screen and (min-width: 960px) {
   .h2 {
@@ -141,15 +142,15 @@
   line-height: 22px;
 }
 
-.p_j14n-j20n {
+.p_j14m-j20m {
   font-family: Jost, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 20px;
 }
 @media only screen and (min-width: 1105px) {
-  .p_j14n-j20n {
+  .p_j14m-j20m {
     font-size: 20px;
     line-height: 29px;
   }
