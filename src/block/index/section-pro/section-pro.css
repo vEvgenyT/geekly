@@ -1,0 +1,83 @@
+/*
+**********************************************************
+*** =============== >>> - SECTION - <<< ============== ***
+**********************************************************
+*/
+
+
+.pro {
+  grid-area: pro;
+}
+
+.pro_position {
+  margin: 25px 0;
+}
+
+
+
+
+
+
+.pro__heading_style {
+  color: var(--main);
+  text-align: center;
+}
+
+.pro__heading_position {
+  margin: 0;
+}
+
+.pro__paragraph_style {
+  color: var(--white);
+  text-align: center;
+}
+
+.pro__paragraph_size {
+  width: 300px;
+}
+@media only screen and (min-width: 480px) {
+  .pro__paragraph_size {
+    width: 460px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .pro__paragraph_size {
+    width: 624px;
+  }
+}
+
+
+
+.pro__paragraph_position {
+  margin: 0 auto 30px;
+}
+@media only screen and (min-width: 960px) {
+  .pro__paragraph_position {
+    margin: 0 auto 50px;
+  }
+}
+
+
+
+
+
+
+
+.list-pro_style {
+  margin: 0;
+  padding: 0 10px;
+  list-style-type: none;
+  border-left: 1px solid var(--main);
+  border-right: 1px solid var(--main);
+  border-bottom: 1px solid var(--main);
+}
+@media only screen and (min-width: 960px) {
+  .list-pro_style {
+    padding: 0 30px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .list-pro_style {
+    margin: 116px 0 0 0;
+  }
+}
