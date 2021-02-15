@@ -1,5 +1,5 @@
-<section class="wrapper">
-  
+<section class="flex agenda_size">
+
   <section class="career career_position">
   
   <h3 class="h3 career__heading_style career__heading_position">Career Track</h3>
@@ -234,12 +234,76 @@
 
 
 
+@media only screen and (min-width: 1920px) {
+  .flex {
+    display: flex;
+  }
+  .list__heading_style {
+    display: none;
+  }
+}
+
+
+
+
+.agenda_size {
+  width: 300px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 480px) {
+  .agenda_size {
+    width: 460px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .agenda_size {
+    width: 620px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .agenda_size {
+    width: 920px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .agenda_size {
+    width: 1100px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .agenda_size {
+    width: 1900px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .career {
   grid-area: career;
 }
 
 .career_position {
-  margin: 50px 0;
+  margin: 25px 0;
 }
 
 
@@ -284,9 +348,12 @@
   .career__paragraph_position {
     margin: 0 auto 50px;
   }
+  }
+  @media only screen and (min-width: 1920px) {
+  .career__paragraph_position {
+    margin: 0 auto 92px;
+  }
 }
-
-
 
 
 
@@ -350,6 +417,11 @@
     grid-gap: 0px 40px;
   }
 }
+@media only screen and (min-width: 1920px) {
+  .grid-list-item {
+    grid-template-columns: repeat(12, 37px);
+  }
+}
 
 html {
   background-color: var(--black);
@@ -375,6 +447,11 @@ html {
 @media only screen and (min-width: 1200px) {
   .list_size {
     width: 1100px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .list_size {
+    width: 950px;
   }
 }
 
@@ -438,9 +515,16 @@ html {
 }
 @media only screen and (min-width: 1200px) {
   .list__item_position {
-    grid-template-areas: 'data data data img img paragraph paragraph paragraph paragraph . . .'
-                          'author author author img img paragraph paragraph paragraph paragraph . . .'
-                          'logo logo logo img img btn btn calendar calendar . . .';
+        grid-template-areas: 'data data data img img img paragraph paragraph paragraph paragraph paragraph .'
+                          'author author author img img img paragraph paragraph paragraph paragraph paragraph .'
+                          'logo logo logo img img img btn btn  calendar calendar . .';
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .list__item_position {
+    grid-template-areas: 'data data data img img img paragraph paragraph paragraph paragraph paragraph paragraph'
+                          'author author author img img img paragraph paragraph paragraph paragraph paragraph paragraph'
+                          'logo logo logo img img img btn btn . calendar calendar .';
   }
 }
 
@@ -622,12 +706,12 @@ html {
 
 
 
-.career {
+.pro {
   grid-area: pro;
 }
 
-.career_position {
-  margin: 50px 0;
+.pro_position {
+  margin: 25px 0;
 }
 
 
