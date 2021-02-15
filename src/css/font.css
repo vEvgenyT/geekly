@@ -156,15 +156,15 @@
   }
 }
 
-.p_j18bl-j22bl {
+.p_j18m-j22m {
   font-family: Jost, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 500;
   font-size: 18px;
   line-height: 26px;
 }
 @media only screen and (min-width: 1105px) {
-  .p_j18bl-j22bl {
+  .p_j18m-j22m {
     font-size: 22px;
     line-height: 32px;
   }

@@ -62,8 +62,8 @@ var path = {
         indexHtml: [
           'src/**/head.html',
           'src/**/header.html',
-          // 'src/**/section-title.html',
-          // 'src/**/section-agenda.html',
+          'src/**/section-title.html',
+          'src/**/section-agenda.html',
           'src/**/section-career.html',
           // 'src/**/section-pro.html',
           'src/**/footer.html',

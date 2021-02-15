@@ -3,13 +3,6 @@
 *** =============== >>> - SECTION - <<< ============== ***
 **********************************************************
 */
-.agenda_position {
-  grid-template-areas: 'heading heading heading heading'
-                        'subtitle subtitle subtitle subtitle'
-                        'paragraph paragraph paragraph paragraph';
-                        /*'select select select select';*/
-}
-
 
 @media only screen and (min-width: 1920px) {
   .flex {
@@ -20,6 +13,37 @@
   }
 }
 
+
+.agenda_position {
+  grid-template-areas: 'heading heading heading heading'
+                        'subtitle subtitle subtitle subtitle'
+                        'paragraph paragraph paragraph paragraph';
+                        /*'select select select select';*/
+}
+@media only screen and (min-width: 480px) {
+  .agenda_position {
+    grid-template-areas: 'heading heading heading heading heading heading'
+                        'subtitle subtitle subtitle subtitle subtitle subtitle'
+                        '. paragraph paragraph paragraph paragraph .';
+                        /*'select select select select';*/
+}
+}
+@media only screen and (min-width: 640px) {
+  .agenda_position {
+    grid-template-areas: 'heading heading heading heading heading heading heading heading'
+                        'subtitle subtitle subtitle subtitle subtitle subtitle subtitle subtitle'
+                        '. . paragraph paragraph paragraph paragraph . .';
+                        /*'select select select select';*/
+}
+}
+@media only screen and (min-width: 960px) {
+  .agenda_position {
+    grid-template-areas: 'heading heading heading heading heading heading heading heading heading heading heading heading'
+                        'subtitle subtitle subtitle subtitle subtitle subtitle subtitle subtitle subtitle subtitle subtitle subtitle'
+                        '. . paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph . .';
+                        /*'select select select select';*/
+}
+}
 
 
 
@@ -55,36 +79,6 @@
 
 
 
-
-/*.agenda_size {
-  width: 300px;
-  margin: 0 auto;
-}
-@media only screen and (min-width: 480px) {
-  .agenda_size {
-    width: 460px;
-  }
-}
-@media only screen and (min-width: 640px) {
-  .agenda_size {
-    width: 620px;
-  }
-}
-@media only screen and (min-width: 960px) {
-  .agenda_size {
-    width: 920px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .agenda_size {
-    width: 1200px;
-  }
-}
-*/
-
-
-
-
 /*
 **********************************************************
 *** =============== >>> - HEADING - <<< ============== ***
@@ -97,6 +91,10 @@
 .agenda__heading_style {
   color: var(--main);
   text-align: center;
+}
+
+.agenda__heading_position {
+  margin: 0;
 }
 
 
@@ -114,6 +112,11 @@
   text-align: center;
 }
 
+.agenda__subtitle_position {
+  margin: 0;
+}
+
+
 /*
 **********************************************************
 *** ============== >>> - PARAGRAPH - <<< ============= ***
@@ -127,3 +130,64 @@
   color: var(--white);
   text-align: center;
 }
+
+@media only screen and (min-width: 960px) {
+  .agenda__paragraph_size {
+    margin: 30px 0;
+  }
+}
+
+
+
+
+.tabs {
+  height: 55px;
+  overflow: hidden;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs:hover {
+  height: 100%;
+}
+
+.tabs__text_style {
+  background-color: transparent;
+  /*text-align: center;*/
+  cursor: pointer;
+  color: var(--white);
+  box-sizing: border-box;
+  border: 1px solid var(--white);
+  line-height: 55px;
+}
+
+
+.tabs__input_style {
+  display: none;
+}
+
+
+
+
+.tabs>input:checked + label {
+    color: var(--black);
+    border: 1px solid var(--main);
+    box-sizing: border-box;
+    background-color: var(--main);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

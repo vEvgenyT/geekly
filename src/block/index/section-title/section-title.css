@@ -5,6 +5,10 @@
 */
 .title_bkg-img {
   background-image: url(../img/bkg@3.png);
+  background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
 }
 
 .title_position {
@@ -14,6 +18,8 @@
                         'tag . . .'
                         'paragraph paragraph paragraph paragraph'
                         'data data data data';
+  padding: 76px 0 0 0;
+
 }
 @media only screen and (min-width: 480px) {
   .title_position {
@@ -41,6 +47,7 @@
                         'paragraph paragraph paragraph paragraph . . img img img img img img'
                         'btn btn btn btn . . img img img img img img'
                         'data data data data data data data data data data data data';
+    padding: 176px 0 0 0;
     }
 }
 
