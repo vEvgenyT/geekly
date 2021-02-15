@@ -212,7 +212,7 @@
   }
 }
 
-.p_b20b-b30b {
+.p_b20b-b25b {
   font-family: Bison, -apple-system,BlinkMacSystemFont,Roboto,'Helvetica Neue',sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -220,7 +220,7 @@
   line-height: 24px;
 }
 @media only screen and (min-width: 1105px) {
-  .p_b20b-b30b {
+  .p_b20b-b25b {
     font-size: 25px;
     line-height: 30px;
   }
