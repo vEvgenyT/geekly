@@ -4,13 +4,54 @@
 **********************************************************
 */
 
+@media only screen and (min-width: 1920px) {
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .list__heading-pro_style {
+    display: none;
+  }
+}
+
 .career {
   grid-area: career;
 }
 
 .career_position {
-  margin: 25px 0;
+  margin: 50px 0;
 }
+
+.career_size {
+  width: 300px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 480px) {
+  .career_size {
+    width: 460px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .career_size {
+    width: 620px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .career_size {
+    width: 920px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .career_size {
+    width: 1160px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .career_size {
+    width: 1900px;
+  }
+}
+
 
 
 
@@ -135,7 +176,7 @@
 }
 @media only screen and (min-width: 1920px) {
   .list_size {
-    width: 950px;
+    width: 940px;
   }
 }
 
@@ -386,6 +427,12 @@
 
 .list__item-qa-paragraph_position {
   margin: 0;
+}
+
+@media only screen and (min-width: 1920px) {
+  .special-style_size {
+      width: 350px;
+  }
 }
 
 

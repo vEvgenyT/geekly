@@ -6,9 +6,9 @@
 .title_bkg-img {
   background-image: url(../img/bkg@3.png);
   background-position: center center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .title_position {
@@ -47,7 +47,7 @@ background-size: cover;
                         'paragraph paragraph paragraph paragraph . . img img img img img img'
                         'btn btn btn btn . . img img img img img img'
                         'data data data data data data data data data data data data';
-    padding: 176px 0 0 0;
+    /*padding: 176px 0 0 0;*/
     }
 }
 
@@ -72,7 +72,7 @@ background-size: cover;
 }
 @media only screen and (min-width: 1200px) {
   .title_size {
-    width: 1200px;
+    width: 1160px;
   }
 }
 

@@ -4,52 +4,41 @@
 **********************************************************
 */
 
-@media only screen and (min-width: 1920px) {
-  .flex {
-    display: flex;
-  }
-  .list__heading-pro_style {
-    display: none;
-  }
-}
-
-
 .agenda_position {
   grid-template-areas: 'heading heading heading heading'
                         'subtitle subtitle subtitle subtitle'
-                        'paragraph paragraph paragraph paragraph';
-                        /*'select select select select';*/
+                        'paragraph paragraph paragraph paragraph'
+                        'select select select select';
+  margin: 100px auto 45px;
 }
 @media only screen and (min-width: 480px) {
   .agenda_position {
     grid-template-areas: 'heading heading heading heading heading heading'
                         'subtitle subtitle subtitle subtitle subtitle subtitle'
-                        '. paragraph paragraph paragraph paragraph .';
-                        /*'select select select select';*/
-}
+                        '. paragraph paragraph paragraph paragraph .'
+                        'select select select select select select';
+  }
 }
 @media only screen and (min-width: 640px) {
   .agenda_position {
     grid-template-areas: 'heading heading heading heading heading heading heading heading'
                         'subtitle subtitle subtitle subtitle subtitle subtitle subtitle subtitle'
-                        '. . paragraph paragraph paragraph paragraph . .';
-                        /*'select select select select';*/
-}
+                        '. . paragraph paragraph paragraph paragraph . .'
+                        'select select select select select select select select';
+  }
 }
 @media only screen and (min-width: 960px) {
   .agenda_position {
     grid-template-areas: 'heading heading heading heading heading heading heading heading heading heading heading heading'
                         'subtitle subtitle subtitle subtitle subtitle subtitle subtitle subtitle subtitle subtitle subtitle subtitle'
-                        '. . paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph . .';
-                        /*'select select select select';*/
+                        '. . paragraph paragraph paragraph paragraph paragraph paragraph paragraph paragraph . .'
+                        'select select select select select select select select select select select select';
+  margin: 155px auto 40px;
+  }
 }
-}
-
-
 
 .agenda_size {
   width: 300px;
-  margin: 0 auto;
 }
 @media only screen and (min-width: 480px) {
   .agenda_size {
@@ -68,14 +57,10 @@
 }
 @media only screen and (min-width: 1200px) {
   .agenda_size {
-    width: 1100px;
+    width: 1160px;
   }
 }
-@media only screen and (min-width: 1920px) {
-  .agenda_size {
-    width: 1900px;
-  }
-}
+
 
 
 
@@ -98,6 +83,7 @@
 }
 
 
+
 /*
 **********************************************************
 *** ============== >>> - SUBTITLE - <<< ============== ***
@@ -117,6 +103,7 @@
 }
 
 
+
 /*
 **********************************************************
 *** ============== >>> - PARAGRAPH - <<< ============= ***
@@ -131,6 +118,9 @@
   text-align: center;
 }
 
+.agenda__paragraph_size {
+  margin: 10px 0 30px 0;
+}
 @media only screen and (min-width: 960px) {
   .agenda__paragraph_size {
     margin: 30px 0;
@@ -151,6 +141,7 @@
 @media only screen and (min-width: 960px) {
   .tabs {
     display: flex;
+    grid-area: select;
   }
 }
 
@@ -165,7 +156,6 @@
 .tabs_style {
   list-style-type: none;
 }
-
 
 .tabs__items {
   display: block;
@@ -183,15 +173,12 @@
   }
 }
 
-
 .tabs__text_style {
   background-color: transparent;
   text-align: center;
   color: var(--white);
   border: 1px solid var(--white);
 }
-
-
 
 .tabs__input_style {
   display: none;
@@ -204,8 +191,9 @@ input:checked + label {
     background-color: var(--main);
 }
 
-
-
+.tabs-mobile {
+  grid-area: select;
+}
 
 .tabs-mobile_size {
   height: 55px;
@@ -232,6 +220,7 @@ input:checked + label {
 
 .tabs-mobile_style {
   background-color: var(--main);
+  font-weight: 800;
 }
 
 .tabs-mobile__option_style {
@@ -239,14 +228,3 @@ input:checked + label {
   background-color: var(--black);
   color: var(--white);
 }
-
-
-
-
-
-
-
-
-
-
-

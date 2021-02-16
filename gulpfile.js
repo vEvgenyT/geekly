@@ -65,23 +65,10 @@ var path = {
           'src/**/section-title.html',
           'src/**/section-agenda.html',
           'src/**/section-career.html',
-          // 'src/**/section-pro.html',
           'src/**/footer.html',
         ],
         js: [
-          // 'src/**/*.js',
-          'src/**/js/**/base.js',
-          // 'src/**/js/**/locomotive.js',
-          // 'src/**/js/**/buzz.js',
-          'src/**/js/**/noise.js',
-          'src/**/js/**/preloader.js',
-          'src/**/js/**/offscroll.js',
-          'src/**/js/**/three.js',
-          // 'src/**/js/**/checkbox.js',
-          'src/**/js/**/sinewave.js',
-          // 'src/**/js/**/lazysizes.js',
-          // 'src/**/js/**/btn.js',
-          'src/**/js/**/scrollanimation.js',
+          'src/**/*.js',
         ],
         img: 'src/img/**/*.*',
         imgWebpIn: [
@@ -367,7 +354,7 @@ gulp.task('/browser-sync', async function() { // Создаем таск browser
             scroll: true
         },
         browser: "google chrome",
-       notify: false // Отключаем уведомления
+        notify: false // Отключаем уведомления
     });
 });
 
